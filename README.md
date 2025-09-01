@@ -1,2 +1,2 @@
 # hello-world
-Hello World exercise.
+This repository is for practicing the GitHub Flow.
