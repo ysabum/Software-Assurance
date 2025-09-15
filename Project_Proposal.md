@@ -23,6 +23,8 @@ Our hypothetical operation environment is for a national retail bank, where the 
 - Vault Health Reports
 - Encrypted cloud storage
 - Role-based access control for enterprises: Administrators can restrict which employees access specific credentials
-  - Also securely share credentials with specific groups, not the entire organization.
+  - Also securely share credentials with specific groups, not the entire organization
 - Audit logs for enterprises
 - Self-hosting option: Enterprises and banks can deploy Bitwarden on their own infrastructure for full control
+## Team Motivation
+When our team had our first meeting, we came up with several open source softwares that we wanted to work on and eventually narrowed down our choice to Bitwarden, as it is a password manager that deals with a lot of sensitive user data for users at home and for enterprises, and is thus in need of software assurance. Additionally, Bitwarden is a larger-sized active project with a number of collaborators and is written in a well-known language (C#, TypeScript/JavaScript), making it an inviting OSS considering our team members prior knowledge. 
