@@ -1,7 +1,8 @@
 ## CYBR/CSCI 8420 Team 6
-**OSS Project Link:** https://github.com/bitwarden/clients  
+**Chosen OSS Link:** https://github.com/bitwarden/clients  
+**Team Project Link:** https://github.com/users/ysabum/projects/1  
   
-**Members:**  
+**Members:**
 - Team Lead/Technical: Hennysa Omoregie
 - Administrative/Project Management: Sai Santhoshi Arcot
 - Writing/Documenting: Deekshith Rangineni
