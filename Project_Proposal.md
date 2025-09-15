@@ -11,7 +11,7 @@ Our hypothetical operation environment is for a national retail bank, where the 
 - Phishing/Fake websites from spoofing
 - Compromised devices due to malware
 - Data breaches/Bitwarden cloud server breach
--Multi-Factor Authentication (MFA) attacks
+- Multi-Factor Authentication (MFA) attacks
 ## List of Security Features
 - End-to-End encryption: All vault data is encrypted locally on the device before syncing. Bitwarden cannot see or access user passwords
 - AES-256 bit encryption with PBKDF2 SHA-256 and Argon2 key derivation: Strong cryptography protects vault contents from brute-force attacks
