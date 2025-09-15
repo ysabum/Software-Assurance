@@ -4,6 +4,7 @@
 ## Hypothetical Operational Environment
 Our hypothetical operation environment is for a national retail bank, where the company is developing a secure online banking application that allows customers to manage their accounts, transfer funds, pay bills, and apply for loans. The company expects to integrate a security tool like Bitwarden to protect credentials and sensitive financial operations for both the employees and customers.
 ## Systems Engineering View
+![image](https://raw.githubusercontent.com/ysabum/Software-Assurance/af70d3762b696d61c5889dad0580611a4998648c/images/SED.png)
 ## Perceived Threats
 - Credential theft 
 - Unauthorized access
