@@ -78,6 +78,22 @@ Bitwarden has always focused on protecting the user data with end to end encrypt
   
 Overall, Bitwarden's History shows the regular independent audits, responsible disclosure, quick fixes, and continuous engineering improvements to keep the user data safe.
 
+## **License, Contribution Procedures, and Contributor Agreements**
+
+### **License**
+The Bitwarden clients repository is distributed under the **GNU General Public License version 3 (GPL-3.0)**. This license guarantees end users the freedom to run, study, share, and modify the software. However, it also enforces the principle of “copyleft,” which requires that any redistributed versions or derivative works remain licensed under GPL-3.0. In practice, this ensures that improvements made by the community remain open and available to all users.
+
+### **Contribution Procedures**
+Bitwarden maintains a structured workflow for external contributions, documented in its Contributing Guide:
+
+1. **Repository Forking and Branching:**  Contributors fork the repository and develop changes in a feature branch. 
+2. **Coding Standards:** Submissions must comply with project style guidelines, include descriptive commit messages, and, when applicable, provide automated test coverage and documentation updates. 
+3. **Pull Request Submission:** Once ready, contributions are submitted as a Pull Request (PR). Maintainers then evaluate technical soundness, adherence to guidelines, and alignment with the project’s objectives.
+4. **Review and Merge:** After feedback and necessary revisions, approved PRs are merged into the main codebase.
+
+### **Contributor Agreements**
+To safeguard intellectual property rights and project integrity, Bitwarden requires contributors to acknowledge its Contributor License Agreement (CLA). The CLA confirms that contributors either own the code they submit or have the legal right to license it, thereby allowing Bitwarden to incorporate the contribution without legal ambiguity. This process provides clarity for both contributors and maintainers, ensuring that the project can confidently integrate external work.
+
 ## Project Reflections
 Initially, we had difficulty finding a time that we could all meet to discuss our team roles and software choices as we had a lot of conflicting schedules with other classes and/or work. Additionally, our team had some confusion in choosing an OSS that was in need of software assurance. However, as a testament to our teamwork, we were successfully able to find a time slot that worked for all our members, as well as, with some discussion with our professor, find an OSS that matched all of our team member's interests.  
   
