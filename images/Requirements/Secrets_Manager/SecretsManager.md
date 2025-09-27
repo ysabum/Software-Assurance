@@ -43,7 +43,7 @@ The user (a developer for the banking application) logs in to Bitwarden and acce
 9. **Enterprise Policies:** [Yes.](https://bitwarden.com/help/policies/) Bitwarden allows organizations to enforce security rules for all users, such as master password requirements, remove unlock with pin, remove export vault data, remove Send options, etc.
    
 ## OSS Project Documentation: Security-Related Configuration and Installation Issues
-All documentation related to Bitwarden is available [here](https://bitwarden.com/help/). Listed below are some security-related condifuration and installation issues:  
+All documentation related to Bitwarden is available [here](https://bitwarden.com/help/); the documentation is fairly thorough. However, listed below are some security-related configuration and installation issues that we were able to find that do not properly match with the documentation:  
 1. Bitwarden SSH Agent Defaults to Improper SSH Socket Location [#13099](https://github.com/bitwarden/clients/issues/13099). Particularly, the documentation for https://bitwarden.com/help/ssh-agent/ is wrong; it claims the Bitwarden SSH Agent socket location on Linux is:
     ```
     export SSH_AUTH_SOCK=/Users/<user>/.bitwarden-ssh-agent.sock
