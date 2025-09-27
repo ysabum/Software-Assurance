@@ -9,3 +9,4 @@
 - Reviewer: Swetha Ulli  
 ## Project Deliverables
 1. [Project Proposal](https://github.com/ysabum/Software-Assurance/blob/main/Project_Proposal.md)
+2. [Requirements for Software Security Engineering](https://github.com/ysabum/Software-Assurance/blob/main/Requirements_for_Software_Security_Engineering.md)
