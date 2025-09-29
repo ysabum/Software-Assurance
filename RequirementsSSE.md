@@ -6,7 +6,7 @@ Our hypothetical operation environment is for a national retail bank, where the 
 ## Essential Interactions
 1. User Logon to Account
 2. User Accesses and Retrieves Secret from Secrets Manager
-3.
+3. Emergency Contact Access
 4.
 
 ## 1. User Logon to Account
@@ -15,8 +15,13 @@ Our hypothetical operation environment is for a national retail bank, where the 
 ## 2. User Accesses and Retrieves Secret from Secrets Manager 
 (text)
 
-## 3.
-(text)
+## 3. Emergency Contact Access
+The Emergency Access feature allows a vault owner to designate trusted contacts with either View or Takeover privileges. When a trusted contact requests access, the owner can approve or deny the request within the waiting period. If approved or if the waiting period expires, the trusted contact receives the level of access that was predefined by the owner during setup. This ensures recovery is possible while maintaining owner control and security.
+
+References: 
+  1. Help Document: https://bitwarden.com/help/emergency-access/#use-emergency-access
+  2. Emergency Access feature: https://github.com/bitwarden/server/issues/28
+
 
 ## 4.
 (text)
