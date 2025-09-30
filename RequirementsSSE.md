@@ -135,7 +135,7 @@ Bitwarden, as an OSS project, already implements several strong features that al
 # [4. Audit Security](https://github.com/ysabum/Software-Assurance/blob/main/images/Requirements/Audit_Security/Audit_Security.md?plain=1)
 ![image](https://github.com/ysabum/Software-Assurance/blob/main/images/Requirements/Audit_Security/Usecase%201.jpeg?raw=true)
 
-## Description of the Use Case
+## Description of the Use Case Scenario
 The Bank Security Team uses Bitwarden to keep track of important activities.  
 Here’s how it works:
 1. Bitwarden creates logs for logins, secret retrievals, and secret rotations.  
@@ -146,7 +146,7 @@ Here’s how it works:
 This helps the bank monitor user actions and react quickly to any security issues.
 
 
-## Misuse Cases
+## Description of the Misuse Cases
 A malicious ex-developer might try to misuse the system in these ways:
 - **Delete or change logs** → stopped by **immutable server-side log storage**.  
 - **Read logs to steal metadata** (like usernames or IPs) → reduced by **role-based admin permissions**.  
@@ -175,7 +175,7 @@ Bitwarden already offers many helpful features:
 Some advanced features (like stronger anomaly detection or full immutable storage) may need external tools or enterprise versions.
 
 # OSS Project Documentation: Security-Related Configuration and Installation Issues
-All documentation related to Bitwarden is available [here](https://bitwarden.com/help/); the documentation is fairly thorough. However, listed below are some security-related configuration and installation issues that we were able to find that do not properly match with the documentation:  
+All documentation related to Bitwarden is available [here](https://bitwarden.com/help/); the documentation is fairly thorough. However, listed below is one notable security-related configuration and installation issue that we were able to find that does not properly match with the documentation:  
 - **Bitwarden SSH Agent Defaults to Improper SSH Socket Location [#13099](https://github.com/bitwarden/clients/issues/13099).** Particularly, the documentation for https://bitwarden.com/help/ssh-agent/ is wrong; it claims the Bitwarden SSH Agent socket location on Linux is:
     ```
     export SSH_AUTH_SOCK=/Users/<user>/.bitwarden-ssh-agent.sock
@@ -204,8 +204,4 @@ Other Bitwarden Feature Gaps:
 2. Some enterprise-level features (audit logs, event monitoring) are limited to organizational accounts.
 
 # Reflection
-**Henny Omoregie:** As a group, we initially had difficulties with coming prepared to the instructor meeting to discuss this assignment. We typically have our team meetings about 30 minutes before the instructor meeting, since that's the only time that works for all of us (on the weekdays, that is). We scheduled this meeting to specifically discuss what essential interactions there were of Bitwarden with its environment of operation, but in doing so, while all of us had a good idea of what the use cases would be for our software, we hadn't actually done any diagramming yet, so there was only so much feedback we could get from our professor. To make sure we were all on the same page, we then scheduled a 2 progress meetings the following Saturday and Sunday, which was very helpful. In the future, I believe it would be more useful for us to have an additional team meeting on the weekends if possible; we could use that time for brainstorming, while our Wednesday meeting time could be used to check progress on the assignment(s).
-
-**Swetha Ulli:** This assignment helped me see the importance of looking at a feature not just for its intended use but also for how it could be misused. At first, I viewed Emergency Access mainly as a helpful recovery option, but mapping out misuse cases showed me how many attack angles exist and how easily a feature can turn into a vulnerability if not designed carefully. The most useful part for me was connecting our misuse case analysis with Bitwarden’s documentation and features, which showed how theory applies in practice. Overall, I gained a stronger ability to think critically about security and to balance usability with protection.
-
-**Deekshith Rangineni:** This assignment helped me realize that even simple features like audit logs can be attacked in different ways. By looking at how a malicious ex-developer might try to misuse the system, I saw why features like MFA, permissions, and secure logs are so important.It also showed me how Bitwarden’s documentation connects with these ideas and how real-world tools provide protection. Overall, I learned to think not only about how a system should work, but also how it could be misused.
+This assignment helped showcase how integral use cases are in identifying the critical interactions of a software system with its environment. The process of creating these use cases clarified how the Bitwarden system is intended to be used with our hypothetical operation environment and helped us uncover security risks tied to those interactions. For example, Emergency Access can be viewed mainly as a helpful recovery option, but mapping out misuse cases showed how many attack angles exist and how easily a feature can turn into a vulnerability if not designed carefully. By looking at how a malicious actor might try to misuse the system, we saw why features like MFA, permissions, and security logs are so important. By connecting our misuse case analysis with Bitwarden’s documentation and features, we saw how theory applies in practice. Overall, we learned to think not only about how a system should work, but also how it could be misused, and we gained a stronger ability to think critically about security and to balance usability with protection.
