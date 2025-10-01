@@ -13,7 +13,7 @@ Our hypothetical operation environment is for a national retail bank, where the 
 4. Audit Security
 
 # [1. User Login to Account](https://github.com/ysabum/Software-Assurance/blob/main/images/Requirements/Customer_Authentication/Customer_authetication.md)
-![image](https://github.com/ysabum/Software-Assurance/blob/main/UC_Login_misuse.png)
+![image](https://github.com/ysabum/Software-Assurance/blob/main/images/Requirements/Customer_Authentication/UC_Login_misuse.png?raw=true)
 
 ## Description of the Use Case Scenario
 The interaction is as follows:  
