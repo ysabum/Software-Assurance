@@ -1,5 +1,5 @@
 # Authentication and Vault Management in Bitwarden Clients
-![image](https://github.com/ysabum/Software-Assurance/blob/main/images/Requirements/Customer_authentication/UC_Login_misuse.png?raw=true)
+![image](https://github.com/ysabum/Software-Assurance/blob/main/UC_Login_misuse.png)
 
 ## Description of Interaction
 Use- Case:
@@ -116,6 +116,8 @@ While Bitwarden’s documentation is thorough (https://bitwarden.com/help/ ), se
 ```bash
 
 export SSH_AUTH_SOCK=/home/<user>/.bitwarden-ssh-agent.sock.
+
+```
 
 Overall Assessment: I learned to iterate between use and misuse cases and turn each threat into a concrete, testable requirement, keeping a clean chain from misuser to misuse to mitigation to SR and to the Bitwarden feature.
 Digging into passkeys clarified origin binding and when PRF-capable authenticators can unlock the vault, while comparing Argon2id and PBKDF2 showed why enforcing minimum KDF work factors matters.
