@@ -10,3 +10,4 @@
 ## Project Deliverables
 1. [Project Proposal](https://github.com/ysabum/Software-Assurance/blob/main/Project_Proposal.md)
 2. [Requirements for Software Security Engineering](https://github.com/ysabum/Software-Assurance/blob/main/RequirementsSSE.md)
+3. [Assurance Cases for Software Security Engineering](https://github.com/ysabum/Software-Assurance/blob/main/Assurance_Cases.md)
