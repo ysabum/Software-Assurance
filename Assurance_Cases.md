@@ -35,7 +35,7 @@ Overall, there are no gaps between the evidence identified for this claim and th
 
 ## Reflection
 
-## Top-Level Claim-2
+## Top Claim-2
 
 [Bitwarden Keeps Emergency Contact Access Secure.](https://github.com/ysabum/Software-Assurance/blob/main/images/Assurance_Cases/Emergency_access/emergency_access.md)
 
