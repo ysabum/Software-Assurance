@@ -41,10 +41,6 @@ Overall, there are no gaps between the evidence identified for this claim and th
 
 ![image](https://github.com/ysabum/Software-Assurance/blob/main/images/Assurance_Cases/Emergency_access/assuranceCaseEA.drawio.png?raw=true)
 
-# Assurance Case: Bitwarden Keeps Emergency Contact Access Secure
-
-![Assurance Case Diagram](./assuranceCaseEA.drawio.png)
-
 **Top Claim:** Bitwarden Keeps Emergency Contact Access Secure.  
 
 **Context:**  
