@@ -38,7 +38,9 @@ Overall, there are no gaps between the evidence identified for this claim and th
 ## Top Claim 2: Bitwarden Audit Log Assurance Case
 
 ## Top Claim (C1):
-[Bitwarden audit logs minimize tampering and unauthorized alteration.] (https://github.com/ysabum/Software-Assurance/blob/main/images/Assurance_Cases/Audit_Logs/Assurance_case.drawio.png)
+[Bitwarden audit logs minimize tampering and unauthorized alteration.](https://github.com/ysabum/Software-Assurance/blob/main/images/Assurance_Cases/Audit_Logs/README.md)
+
+![image](https://github.com/ysabum/Software-Assurance/blob/main/images/Assurance_Cases/Audit_Logs/Assurance_case.drawio.png)
 
 ---
 
