@@ -133,7 +133,7 @@ Overall, this project helped me connect what I learned in class to a real open-s
 ---
 
 
-## Top Claim-2
+## Top Claim-3
 
 [Bitwarden Keeps Emergency Contact Access Secure.](https://github.com/ysabum/Software-Assurance/blob/main/images/Assurance_Cases/Emergency_access/emergency_access.md)
 

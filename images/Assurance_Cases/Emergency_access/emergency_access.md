@@ -97,13 +97,11 @@ All vault data is end-to-end encrypted using AES-256-CBC with PBKDF2-HMAC-SHA256
 
 **Gap:** No ECC (Elliptic Curve Cryptography) implementation, which could offer higher efficiency and security margin.
 
-
 ### **E7: Third-Party Security Audit Reports**
 Documentation: [Bitwarden Audits](https://bitwarden.com/help/is-bitwarden-audited/)  
 Annual independent security assessments validate Bitwarden’s encryption, authentication, and infrastructure integrity.  
 
 **Gap:** Only summarized reports are publicly available; more detailed summaries could improve transparency.
-
 
 ### **E8: Immutable Log Storage Configuration and Access Control Lists**
 Documentation: [Event Logs](https://bitwarden.com/help/event-logs/)  
