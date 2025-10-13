@@ -134,6 +134,9 @@ Overall, this project helped me connect what I learned in class to a real open-s
 
 ---
 ## Top Claim 3: Bitwarden client applications adequately protect user vault secrets from unauthorized disclosure during local storage and synchronization.
+
+[Read the full Vault Confidentiality case →](https://github.com/ysabum/Software-Assurance/blob/main/images/Assurance_Cases/Vault_Confidentiality/Vault_Confidentiality.md)
+
 ![Vault Confidentiality Diagram](https://github.com/ysabum/Software-Assurance/blob/main/images/Assurance_Cases/Vault_Confidentiality/Bitwarden_AssuranceCase_C1.png?raw=true)
 
 ### Operational Context
@@ -176,13 +179,9 @@ Static analysis and memory-safety test results — Bitwarden’s open-source Cli
   
 **Gap:** Timeout policies are user-configurable and may be set too leniently, potentially extending exposure time for decrypted data in client memory or cache.
 
-## AI Prompt and Reflection
+## AI Usage
 
-### AI Prompt Used:
-“You are an expert software-assurance engineer. Your task is to construct and refine assurance claims for Bitwarden’s client-side vault confidentiality, ensuring each claim contains an entity, a critical property, and measurable evidence.”
-
-### Usefulness Reflection:
-The prompt focused the reasoning on measurable security outcomes rather than implementation details. It guided the assurance argument toward verifiable results and improved logical consistency among claims, rebuttals, and evidence.
+We used targeted prompts to refine claim phrasing, generate realistic rebuttals, and enforce noun-phrase evidence across cases. All AI output was reviewed and validated against Bitwarden documentation and code.
 
 ## Santhoshi's Reflection
 This assurance case demonstrates how Bitwarden’s client applications maintain vault confidentiality through multi-layered security: encryption at rest, key management, encrypted synchronization, and session timeouts.
