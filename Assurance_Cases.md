@@ -135,7 +135,7 @@ Overall, this project helped me connect what I learned in class to a real open-s
 ---
 ## Top Claim 3: Bitwarden client applications adequately protect user vault secrets from unauthorized disclosure during local storage and synchronization.
 
-[Read the full Vault Confidentiality case →](https://github.com/ysabum/Software-Assurance/blob/main/images/Assurance_Cases/Vault_Confidentiality/Vault_Confidentiality.md)
+[Vault Confidentiality case](https://github.com/ysabum/Software-Assurance/blob/main/images/Assurance_Cases/Vault_Confidentiality/Vault_Confidentiality.md)
 
 ![Vault Confidentiality Diagram](https://github.com/ysabum/Software-Assurance/blob/main/images/Assurance_Cases/Vault_Confidentiality/Bitwarden_AssuranceCase_C1.png?raw=true)
 
