@@ -1,4 +1,5 @@
 # Bitwarden Audit Log Assurance Case
+![image](https://github.com/ysabum/Software-Assurance/blob/main/images/Assurance_Cases/Audit_logs/Assurance_case.drawio.png?raw=true)
 
 ## **Top Claim (C1):**
 **Bitwarden audit logs minimize tampering and unauthorized alteration.**
@@ -115,6 +116,7 @@ By connecting real documentation links as evidence, this assurance case moves be
 - Bitwarden Access Control: [https://bitwarden.com/help/user-types-access-control/](https://bitwarden.com/help/user-types-access-control/)
 
 ---
+
 
 ## **Reflection**
 Working on this assurance case helped me understand how Bitwarden keeps its audit logs safe from tampering or deletion.  
