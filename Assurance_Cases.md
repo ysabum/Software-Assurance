@@ -49,54 +49,6 @@ In the online banking environment, Bitwarden enables bank customers to designate
 **Justification:**  
 This claim argues that the Emergency Access feature in Bitwarden ensures only authorized and verified contacts can access vault data under controlled and auditable conditions. Security mechanisms such as encryption, MFA, waiting period enforcement, and event logging collectively support this assurance.
 
-## Subclaims and Argumentation
-
-1. **C2:** Bitwarden uses secure onboarding and multi-factor authentication (MFA) for emergency contacts.  
-   - **Rebuttal (R1):** Unless the setup process is not secure.  
-   - **Evidence:** Bitwarden Authentication Documentation (E1).
-
-2. **C3:** Bitwarden monitors for account compromise and enforces account recovery procedures.  
-   - **Rebuttal (R2):** Unless unauthorized users gain control of accounts.  
-   - **Evidence:** Account Monitoring and Recovery Policy (E2).
-
-3. **C4:** Bitwarden ensures emergency access requests and approvals are securely communicated.
-   - **R4:** Unless notifications can be intercepted, delayed, or bypassed.  
-   - **E3:** Notification System Test Results and Audit Reports.
-
-4. **C5:** Bitwarden enforces a minimum waiting period before access is granted.
-   - **R5:** Unless waiting period enforcement can be bypassed or shortened.  
-   - **UM1 (Undermine):** Unless vault owner misconfigures waiting period to an unsafe duration.  
-   - **E4:** Emergency Access Workflow Documentation.  
-   - **E5:** Minimum Waiting Period Configuration Documentation and System Logs.
-
-5. **C6:** Bitwarden enforces a minimum waiting period before granting emergency access.  
-   - **Undermine (UM1):** Unless the waiting period is too short or misconfigured.  
-   - **Evidence:** Emergency Access Workflow Documentation (E4) and Waiting Period Logs (E5).
-
-6. **C7:** Emergency access requests and approvals are end-to-end encrypted.  
-   - **Rebuttal (R5):** Unless encryption implementation is weak or incomplete.  
-   - **Evidence:** Encryption Implementation Details (E6).
-
-7. **C8:** Emergency contact and vault data are encrypted both at rest and in transit.  
-   - **Rebuttal (R6):** Unless encryption keys are compromised or improperly stored.  
-   - **Evidence:** Bitwarden Security Whitepaper and Audits (E7).
-
-8. **C9:** Bitwarden maintains comprehensive event and access logging for all emergency access actions.  
-   - **Undermine (UM2):** Unless logs can be modified or deleted.  
-   - **Evidence:** Immutable Log Storage Documentation (E8).
-
-9. **C10:** Bitwarden’s system design minimizes insider misuse.
-   - **R11:** Unless administrators abuse Takeover access or override security policies.  
-   - **E3:** Notification and Audit Trail Documentation.  
-   - **E8:** Immutable Log Storage Configuration.
-
-10. **C11:** Bitwarden enforces strong identity verification through MFA and fingerprint phrases.  
-   - **Undercut (UC1):** Unless the vault owner is phished into confirming unauthorized access.  
-   - **Evidence:** Audit Logs and Phishing Simulation Results (E9).
-
-11. **C12:** Bitwarden implements anti-phishing and anti-spoofing measures.  
-   - **Evidence:** Security Awareness and MFA Enforcement Documentation (E1, E9).
-
 ## Evidence
 
 ### **E1: Bitwarden Authentication Documentation (2FA, MFA Setup and Enforcement)**
