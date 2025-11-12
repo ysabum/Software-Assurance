@@ -21,7 +21,10 @@ Security mechanisms such as cryptographic signing, replication, **backup enforce
 This claim demonstrates that Bitwarden’s client applications maintain strong confidentiality through end-to-end encryption, secure key handling, encrypted synchronization, and enforced vault timeouts. Together these controls ensure that even if local devices, caches, or network channels are exposed vault data remains inaccessible to unauthorized entities.
 
 ### AI Usage
+#### AI Prompt Used
+> "You are an expert software assurance engineer. Your task is to construct and refine assurance claims for Bitwarden’s client-side vault confidentiality, ensuring each claim includes a defined entity, a security property, and measurable supporting evidence."
 
+#### Usefulness Reflection
 We used targeted prompts to refine claim phrasing, generate realistic rebuttals, and enforce noun-phrase evidence across cases. All AI output was reviewed and validated against Bitwarden documentation and code.
 
 ## Top Claim 4
