@@ -36,7 +36,7 @@ Bitwarden implements nearly all expected mitigations derived from level1 DFD-bas
 
     Mitigates risks arising from implementation flaws (https://bitwarden.com/help/is-bitwarden-audited/#third-party-security-audits)
 
-Together, these directly map to the STRIDE threats identified in  Level-1 DFD [TMT report]  https://htmlpreview.github.io/?https://github.com/ysabum/Software-Assurance/blob/main/images/DFD/emergencyContactAccess/trusted_contact_dfd1_report.htm (spoofing, tampering, repudiation, disclosure, DoS, EoP).
+Together, these directly map to the STRIDE threats identified in  Level-1 DFD [TMT report](https://github.com/ysabum/Software-Assurance/blob/main/images/DFD/emergencyContactAccess/trusted_contact_dfd1_report.htm) (spoofing, tampering, repudiation, disclosure, DoS, EoP).
 
 ## ⚠️ Identified Gaps and Areas for Improvement
 
