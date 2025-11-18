@@ -65,29 +65,28 @@ Based on my threat list and the current Bitwarden documentation/code, here are a
 
 2. Client Behavior Depends Heavily on User Password Strength
 
-Bitwarden’s master password strength directly impacts encryption strength.
-Weak passwords weaken defenses against:
+   Bitwarden’s master password strength directly impacts encryption strength.
+   Weak passwords weaken defenses against:
+     -> Brute-force attacks
 
-    -> Brute-force attacks
-
-    -> Offline vault cracking attempts
-While Bitwarden offers password strength indicators, enforcement is optional.
+     -> Offline vault cracking attempts
+   While Bitwarden offers password strength indicators, enforcement is optional.
 
 3. No Built-In Anti-DoS Mechanism in the Local Client
 
-The Bitwarden client itself does not handle:
+   The Bitwarden client itself does not handle:
 
-    -> Resource exhaustion
+     -> Resource exhaustion
 
-    -> Excessive sync operations
+     -> Excessive sync operations
 
-    -> excessive login retries
-Some DoS threats rely on server-side protections, not the client.
+     -> excessive login retries
+   Some DoS threats rely on server-side protections, not the client.
 
 4. Repudiation Protections Are Stronger on the Server Side
 
-Local client actions (like offline viewing or cache access) are not logged independently.
-While server logs exist, they may not cover all client-only events.
+   Local client actions (like offline viewing or cache access) are not logged independently.
+   While server logs exist, they may not cover all client-only events.
 
 ## Santhoshi's Reflection
 
