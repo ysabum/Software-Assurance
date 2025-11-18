@@ -71,7 +71,6 @@ Weak passwords weaken defenses against:
     -> Brute-force attacks
 
     -> Offline vault cracking attempts
-
 While Bitwarden offers password strength indicators, enforcement is optional.
 
 3. No Built-In Anti-DoS Mechanism in the Local Client
@@ -83,7 +82,6 @@ The Bitwarden client itself does not handle:
     -> Excessive sync operations
 
     -> excessive login retries
-    
 Some DoS threats rely on server-side protections, not the client.
 
 4. Repudiation Protections Are Stronger on the Server Side
