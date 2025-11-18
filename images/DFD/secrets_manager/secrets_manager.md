@@ -1,16 +1,4 @@
-# Designing for Software Security Engineering
-
-## Data Flow Diagrams and Threat Modeling Report
-- [Diagram: Login and Secrets Managers]()
-- [Diagram: Emergency Access]()
-- [Threat Modeling Report for Login and Secrets Manager]()
-- [Threat Modeling Report for Emergency Access]()
-
-## Review of Mitigations in the Bitwarden
-Bitwarden implements nearly all expected mitigations derived from Level 1 DFD-based STRIDE threat analysis. Together, these directly map to the STRIDE threats identified in  Level-1 DFD TMT report (spoofing, tampering, repudiation, disclosure, DoS, EoP, etc.).
-
-
-### Mitigations Implemented According to the DFD Threat Modeling Reports
+### Mitigations Implemented According to the DFD Threat Modeling Report
 
 1. **Transport security for API calls (TLS) and certificate pinning on the client for Secrets Manager API:** prevents easy spoofing of that API. 
 
@@ -50,7 +38,7 @@ These are high-priority because they map to STRIDE elements with direct risk to 
 
 8. **Incomplete / missing justifications:**
     1. Several entries show `<no mitigation provided>` instead of documented controls. This is an organizational/process gap. Mitigations may exist in code/config, but the model does not capture them. Examples include Authentication Request, Authorization Request/Response, and many Secrets Manager interactions.
-    
+
 
 ### Relevant Mitigations Confirmed in OSS Implementation
 
@@ -74,28 +62,3 @@ Bitwarden, and that there are role-based permissions on projects (“Can read”
 5. **Bitwarden's Event Logs:** Documentation can be found [here](https://bitwarden.com/help/event-logs). The documentation shows the types of events logged, including Secrets Manager events (e.g., “Accessed a secret”, “Created a secret”, etc.) and that event logs are exportable via API (/events endpoint) and retained (with some retention settings). [Bitwarden Event Logs in Whitepaper](https://bitwarden.com/pdf/help-event-logs.pdf) confirms certain event IDs for secrets access (e.g., 2100 = “Accessed secret”).      
     
     1. **Potential Gap:** Available documentation does not guarantee tamper-resistance or integrity of logs (who can delete/modify logs, retention guarantees, immutability or write-once storage). Real-time alerting thresholds, SIEM integration specifics, and how logs are protected from insider tampering.
-
-6. **Strong Identity Verification (MFA and Trusted Contact Enrollment):** [Bitwarden supports multiple forms of MFA](https://bitwarden.com/help/setup-two-step-login)including FIDO2, Duo, authenticator apps, email-based codes, and YubiKey OTP. This mitigates spoofing risks for Trusted Emergency Contacts.
-
-7. **Enforced Waiting Period & Approval Workflow:** The Emergency Access workflow includes a [configurable waiting period and explicit approval or denial steps.](https://bitwarden.com/help/emergency-access/#trusted-emergency-contacts). Bitwarden notifies the vault owner for each [emergency access request](https://bitwarden.com/help/emergency-access).
-
-    1. **Potential Gap:** Emergency contacts do not need a paid subscription, which means they are not required to enable MFA. This creates a policy-level gap where the emergency contact may authenticate with weaker security than the vault owner, increasing the chance of spoofing. The vault owner sets the waiting period length freely. Users may choose an insecurely short waiting period, weakening the protection intended by this control. These two gaps are policy issues rather than architectural flaws.
-
-8. **End-to-End Encryption on All Vault and Emergency Access Data:** Bitwarden uses [AES-256-CBC, RSA-2048, and PBKDF2-HMAC-SHA256 for encryption and key derivation.](https://bitwarden.com/help/bitwarden-security-white-paper/#hashing-key-derivation-and-encryption) These controls mitigate tampering, disclosure, and EoP (Elevation of Privilege) risks.
-
-9. **Zero-Knowledge Cryptographic Design:** Prevents Bitwarden (or an attacker) from [decrypting user vaults](https://bitwarden.com/resources/zero-knowledge-encryption).
-
-10. **Annual Third-Party Security Audits:** [Mitigates risks arising from implementation flaws](https://bitwarden.com/help/is-bitwarden-audited/#third-party-security-audits).
-
-
-## Project Board
-[Software Assurance Project: To-Do](https://github.com/users/ysabum/projects/1)
-
-
-## Team Reflection
-
-Working on the Emergency Access and Secrets Manager features in Bitwarden helped us understand how important it is to look closely at how data moves through a system. Creating the DFD and doing the STRIDE analysis showed us where weaknesses can appear and why trust boundaries matter.
-
-Additionally, reviewing Bitwarden’s documentation helped in connecting the threats in the model to the actual controls in the system, such as encryption, logging, and the waiting period. Noticing gaps like optional MFA for emergency contacts also helped in seeing how certain user settings can reduce security.
-
-Overall, this assignment helped us develop a clearer view of how to analyze a feature, understand its risks, and match threats to real-world mitigations.
