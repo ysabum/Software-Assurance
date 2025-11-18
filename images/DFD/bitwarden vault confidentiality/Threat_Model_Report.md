@@ -46,8 +46,7 @@ After reviewing Bitwarden’s open-source client and documentation, I compared t
 
 7. Independent Security Audits
 
- Bitwarden undergoes periodic third-party security assessments.
- (https://bitwarden.com/help/is-bitwarden-audited/)
+    Bitwarden undergoes periodic third-party security assessments. (https://bitwarden.com/help/is-bitwarden-audited/)
 
 These audits validate that mitigations operate correctly and reduce implementation-related threats.
 
@@ -59,23 +58,32 @@ Based on my threat list and the current Bitwarden documentation/code, here are a
 
    Two-step login is optional and not required by default. Users who do not enable 2FA are more vulnerable to :
      -> Spoofing
+
      -> Credential theft
+
      -> Password guessing
 
 2. Client Behavior Depends Heavily on User Password Strength
 
 Bitwarden’s master password strength directly impacts encryption strength.
 Weak passwords weaken defenses against:
+
     -> Brute-force attacks
+
     -> Offline vault cracking attempts
+
 While Bitwarden offers password strength indicators, enforcement is optional.
 
 3. No Built-In Anti-DoS Mechanism in the Local Client
 
 The Bitwarden client itself does not handle:
+
     -> Resource exhaustion
+
     -> Excessive sync operations
+
     -> excessive login retries
+    
 Some DoS threats rely on server-side protections, not the client.
 
 4. Repudiation Protections Are Stronger on the Server Side
