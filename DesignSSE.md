@@ -1,7 +1,7 @@
 # Designing for Software Security Engineering
 
 ## Data Flow Diagrams and Threat Modeling Reports
-- [Diagram: Secrets Managers](https://github.com/ysabum/Software-Assurance/blob/main/images/DFD/secrets_manager/secrets.png)
+- [Diagram: Secrets Manager](https://github.com/ysabum/Software-Assurance/blob/main/images/DFD/secrets_manager/secrets.png)
 - [Diagram: Emergency Access](https://github.com/ysabum/Software-Assurance/blob/main/images/DFD/emergencyContactAccess/trustedcontact.png)
 - [Threat Modeling Report for Secrets Manager](https://htmlpreview.github.io/?https://github.com/ysabum/Software-Assurance/blob/main/images/DFD/secrets_manager/secrets_report.htm)
 - [Threat Modeling Report for Emergency Access](https://htmlpreview.github.io/?https://github.com/ysabum/Software-Assurance/blob/main/images/DFD/emergencyContactAccess/trusted_contact_dfd1_report.htm)
