@@ -5,6 +5,7 @@
 - [Diagram: Emergency Access](https://github.com/ysabum/Software-Assurance/blob/main/images/DFD/emergencyContactAccess/trustedcontact.png)
 - [Threat Modeling Report for Secrets Manager](https://htmlpreview.github.io/?https://github.com/ysabum/Software-Assurance/blob/main/images/DFD/secrets_manager/secrets_report.htm)
 - [Threat Modeling Report for Emergency Access](https://htmlpreview.github.io/?https://github.com/ysabum/Software-Assurance/blob/main/images/DFD/emergencyContactAccess/trusted_contact_dfd1_report.htm)
+- [Full Threat Modeling Report for Bitwarden System](https://htmlpreview.github.io/?https://github.com/ysabum/Software-Assurance/blob/main/images/DFD/full_report.htm)
 
 ## Review of Mitigations in the Bitwarden
 Bitwarden implements nearly all expected mitigations derived from Level 1 DFD-based STRIDE threat analysis. Together, these directly map to the STRIDE threats identified in  Level-1 DFD TMT report (spoofing, tampering, repudiation, disclosure, DoS, and EoP).
