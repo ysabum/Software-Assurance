@@ -1,8 +1,8 @@
 # Code Analysis for Software Security Engineering
 ## Code Review Strategy
-Our team decided to conduct our code review using a scenario-based approach using the use cases [we developed previously](https://github.com/ysabum/Software-Assurance/blob/main/RequirementsSSE.md). We identified Common Weakness Enumerations (CWEs) relevant to our indivudal uses cases, then as a group, we decided as a team which CWEs to prioritize for manual review of Bitwarden's code. Automated review using code review tools seen below was then done as a team, where we decided what CWEs closely aligned with the results of automated review. The results were then compared to the CWEs from manual review.
+Before starting the code review, our team anticipated that, with Bitwarden's large and complex codebase, we would have difficulty identifying security-relevant code paths. Additionally, with numerous functions handling sensitive data (such as passwords, TOTP codes, collections, and user permissions), it could be challenging to determine which areas of Bitwarden's code posed the highest risk for vulnerabilities. 
 
-(What challenges did you expect before starting the code review? How did your code review strategy attempt to address the anticipated challenges?)
+To mitigate some of these challenges, our team decided to conduct our code review using a scenario-based approach using the use cases [we developed previously](https://github.com/ysabum/Software-Assurance/blob/main/RequirementsSSE.md). We identified Common Weakness Enumerations (CWEs) relevant to our indivudal uses cases, then as a group, we decided as a team which CWEs to prioritize for manual review of Bitwarden's code. We also decided to incorporated automated review using DeepScan.io to further help identify which parts of Bitwarden's code we should be focusing on for code review. The results from automated code review were then compared to the CWEs from manual review.
 
 ## Manual Code Review
 ### [CWE-326: Inadequate Encryption Strength](https://cwe.mitre.org/data/definitions/326.html)
@@ -194,9 +194,27 @@ However, the tests verify correct argument handling and null safety. No function
 
 ## Findings Summary
 
+Based on our code review seen above, including manual review and an automated scan of the code, we identified the following major CWEs that could be addressed to improve the overall security of the project:
+
 ## Open-Source Contributions
+
+While our team has not made direct code contributions to the upstream Bitwarden OSS project, our work has produced extensive documentation and analysis that could be valuable for future users and maintainers. Specifically, our security-focused investigation and requirements analysis highlight areas where the official documentation may not fully reflect the realities of OSS installations.
+
+For example:
+
+- **SSH Agent Configuration Issue:** The official documentation for the Bitwarden SSH Agent on Linux incorrectly lists the default socket location. Our documentation clarifies the correct path `/home/<user>/.bitwarden-ssh-agent.sock`, which can help prevent misconfigurations.
+
+- **Audit Log Limitations:** We identified several gaps between OSS behavior and documentation, including delayed client-to-server log sync, lack of native immutable log storage, and limited role-based permissions compared to enterprise editions.
+
+- **Feature Gaps in OSS Clients:** Our analysis highlights missing enterprise-level features such as multi-channel notifications, biometric verification, and granular vault scoping, which users should account for when relying solely on the OSS version.
+
+This documentation, along with our scenario-based use cases and assurance cases, could serve as a reference for OSS developers and project managers evaluating Bitwarden. By making these nuances explicit, future contributors or maintainers could improve user guidance, configuration instructions, and security awareness around the OSS deployment.
 
 ## Project Board
 [Software Assurance Project: To-Do](https://github.com/users/ysabum/projects/1)
 
 ## Reflection
+
+Given what we've learned in lecture and from this assignment, our team gained a deeper understanding of how security-focused code review is conducted in large-scale, real-world applications, using Bitwarden as our case study. Overall, this assignment emphasized the importance of a structured code review strategy. That is, by approaching the review with a scenario-based strategy, we were able to focus on areas of the code that are most critical to security, such as handling sensitive data (passwords, TOTP codes) or user permissions. Defining CWEs in advance helped us prioritize review efforts and identify high-risk areas, rather than getting lost in the large amount of code Bitwarden has. 
+
+Additionally, working together to define CWEs, focus areas, and high-risk components reinforced the importance of team alignment and communication in security code reviews. Assigning specific components or functions to individual team members allowed for more thorough coverage and cross-validation of our findings.
