@@ -12,3 +12,4 @@
 2. [Requirements for Software Security Engineering](https://github.com/ysabum/Software-Assurance/blob/main/RequirementsSSE.md)
 3. [Assurance Cases for Software Security Engineering](https://github.com/ysabum/Software-Assurance/blob/main/Assurance_Cases.md)
 4. [Designing for Software Security Engineering](https://github.com/ysabum/Software-Assurance/blob/main/DesignSSE.md)
+5. [Code Analysis for Software Security Engineering](https://github.com/ysabum/Software-Assurance/blob/main/CodeAnalysis.md)
