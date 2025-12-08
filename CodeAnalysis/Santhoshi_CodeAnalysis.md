@@ -163,10 +163,6 @@ and properly implemented in the examined components.
 ## Automated Code Review
 Semgrep was used to analyze the Bitwarden clients repository, scanning more than 6,000 JavaScript, TypeScript, and HTML files..
 
-### Possible Command Injection in Build Scripts (CWE-78)
-
-Semgrep flagged several build and packaging scripts that use execSync() with values that could become unsafe if they were ever influenced by external input.
-
 ### Automated Scanning Impact on CWE-522/CWE-532
 - No CWE-522 issues were detected by Semgrep.
 - No logs containing sensitive data were reported (CWE-532).
