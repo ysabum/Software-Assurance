@@ -170,24 +170,6 @@ Semgrep was used to analyze the Bitwarden clients repository, scanning more than
 
 Automated scanning complements manual review by identifying patterns that may not be obvious at first glance. Semgrep was selected because it supports TypeScript and offers broad rule coverage.
 
-## OSS Project Contributions (Planned)
-
-To support the Bitwarden open-source community, I identified areas where
-documentation and developer onboarding can be improved. Although no vulnerabilities
-were found, contributing clarity helps strengthen the overall security posture.
-
-### Planned Contributions
-- Propose a documentation update explaining how internal secure services
-(KeyService, MasterPasswordService, StateProvider) abstract sensitive values.
-- Draft a small PR adding inline comments to the KDF configuration module to
-improve maintainability for new contributors.
-- Open a GitHub Discussion highlighting how logout-clearing behavior works in
-user-decryption-options.service.ts for transparency.
-- Add a README note describing how client-side modules should avoid logging in
-sensitive workflows.
-These contributions aim to support maintainability, developer clarity, and continued
-security-awareness within the Bitwarden ecosystem.
-
 ## Reflection:
 Working on this project gave me a deeper understanding of how secure credential-handling is implemented in real-world client applications. By analyzing key components of the Bitwarden clients repository, I was able to see how concepts like zero-knowledge design, KDF-based key derivation, and state isolation are applied in practice to protect highly sensitive user data. Observing how the master password and derived cryptographic keys were abstracted behind secure service layers helped reinforce the importance of minimizing direct exposure to sensitive values.
 
