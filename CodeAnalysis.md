@@ -416,7 +416,7 @@ child_process.execSync(`npm run build -- ${targetArg}`, { stdio: "inherit" });
 ```
 If targetArg or similar variables ever came from untrusted input, they could allow command injection. Right now these scripts are internal and used only in development builds, so the practical risk is low.
 
-### [CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')](https://cwe.mitre.org/data/definitions/79.html)
+#### [CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')](https://cwe.mitre.org/data/definitions/79.html)
 
 **Description:** The product uses user-supplied input to dynamically generate HTML content that is then displayed in a web page, but it does not properly sanitize or encode that content to prevent cross-site scripting (XSS) attacks.
 
