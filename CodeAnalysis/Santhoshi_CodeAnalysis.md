@@ -25,6 +25,7 @@ The following files from the Bitwarden clients repository were manually inspecte
 -  libs/auth/src/common/services/user-decryption-options/user-decryption-options.service.ts
 -  libs/auth/src/common/services/login-email/login-email.service.ts
 -  libs/common/key-management/src/kdf-config.service.ts
+  
 Together, these modules represent the core surface area where Bitwarden’s client-side credential protection mechanisms are implemented.
 
 ### [CWE-522: Insufficiently Protected Credentials](https://cwe.mitre.org/data/definitions/522.html)
